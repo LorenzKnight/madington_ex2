@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+:root {
+    --main-bg-color: orange;
+    --logo-color:  royalblue;
+    --btn-yellow: rgb(253, 195, 4);
+    --txt-blue: rgb(12, 73, 204);
+}
+body {
+    margin: 0;
+    padding: 20px 0 100px 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+h1, h3, h4, h5{
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+.wrapp {
+    width: 320px;
+    height: 250px;
+    background-color: var(--main-bg-color);
+    background-size: cover;
+    overflow: hidden;
+}
+.wrapp2 {
+    width: 800px;
+    height: 400px;
+    background-color: var(--main-bg-color);
+    overflow: hidden;
+}
+.wrapp3 {
+    width: 300px;
+    height: 600px;
+    background-color: var(--main-bg-color);
+    overflow: hidden;
+}
+.product {
+    width: 120px;
+    height: 240px;
+    margin: 0 0 0 3px;
+    background-image: url('assets/symfonisk-blue.png');
+    background-size: cover;
+    position: absolute;
+}
+.product-2 {
+    width: 90px;
+    height: 175px;
+    margin: 10px 0 0 105px;
+    background-image: url('assets/symfonisk-red.png');
+    background-size: cover;
+    float: left;
+}
+.product2 {
+    width: 185px;
+    height: 355px;
+    margin: 30px 0 0 20px;
+    background-image: url('assets/symfonisk-blue.png');
+    background-size: cover;
+    position: absolute;
+}
+.product2-2 {
+    width: 150px;
+    height: 290px;
+    margin: 40px 0 0 160px;
+    background-image: url('assets/symfonisk-red.png');
+    background-size: cover;
+    float: left;
+}
+.product3 {
+    width: 170px;
+    height: 335px;
+    margin: 0px 0 0 10px;
+    background-image: url('assets/symfonisk-blue.png');
+    background-size: cover;
+    position: absolute;
+}
+.product3-2 {
+    width: 150px;
+    height: 290px;
+    margin:15px 0 0 130px;
+    background-image: url('assets/symfonisk-red.png');
+    background-size: cover;
+    float: left;
+}
+.logo {
+    width: 70px;
+    height: 25px;
+    background-color: var(--logo-color);
+    margin: 10px auto 0;
+}
+.content {
+    width: 145px;
+    overflow: auto;
+    z-index: 1;
+}
+#cnt1 {
+    margin: 0 0 0 170px;
+    float: right;
+    position: absolute;
+}
+#cnt2 {
+    width: 350px;
+    height: 300px;
+    margin: 60px 50px 0 0;
+    float: right;
+}
+#cnt3 {
+    width: 200px;
+    height: 300px;
+    margin: 330px auto 0;
+}
+.hop {
+    width: 100%;
+    overflow: auto;
+    text-decoration: none;
+}
+.content ul {
+    margin: 0;
+    padding: 0;
+}
+.content ul.hop {
+    perspective: 1000px;
+}
+.content ul.hop li {
+    width: 100%;
+    padding: 12px 0;
+    margin: 10px 0;
+    text-align: center;
+    opacity: 0;
+    transform-origin: top center;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--txt-blue);
+}
+
+@keyframes contAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) translateY(-60px);
+    }
+    80% {
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0px);
+    }
+  }
+
+.content ul.hop li.text1 {
+    opacity: 1;
+}
+.content ul.hop li.text2 {
+    opacity: 1;
+}
+.content ul.hop li.text3 {
+    animation: contAnimation 0.3s ease-in-out forwards;
+    animation-delay: 2.5s;
+}
+#btn {
+    border-radius: 7px;
+    background-color: var(--btn-yellow);
+    box-shadow: 0 2px 8px 0 rgba(58,59,69,.15)!important;
+}
