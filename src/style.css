@@ -156,7 +156,7 @@ h1, h3, h4, h5{
 }
 .content ul.hop li.text3 {
     animation: contAnimation 0.3s ease-in-out forwards;
-    animation-delay: 2.5s;
+    animation-delay: 1.0s;
 }
 #btn {
     border-radius: 7px;
